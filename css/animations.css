@@ -1,0 +1,180 @@
+/* General Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Element Animations */
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.slide-in {
+  animation: slideUp 1s ease forwards;
+}
+
+.bounce-in {
+  animation: bounceIn 0.8s ease forwards;
+}
+
+/* Animate on Scroll Classes */
+[data-aos="fade-up"] {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+[data-aos="fade-up"].aos-animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+[data-aos="fade-right"] {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+[data-aos="fade-right"].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+[data-aos="fade-left"] {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+[data-aos="fade-left"].aos-animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Hover Animations */
+.nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+  overflow: hidden;
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+.btn {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.btn::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: width 0.3s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  width: 100%;
+}
+
+.service-card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.service-icon {
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.info-item i {
+  transition: transform 0.3s ease;
+}
+
+.info-item:hover i {
+  transform: scale(1.2) rotate(10deg);
+  color: var(--accent-color);
+}
+
+.social-icon {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}

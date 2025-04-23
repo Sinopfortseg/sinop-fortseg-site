@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sinop Fortseg - VIGILÂNCIA E SEGURANÇA PRIVADA</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header id="header">
+    <div class="container">
+      <div class="logo-container">
+        <img src="img/logo.png" alt="Sinop Fortseg Logo" class="logo">
+        <h1 class="company-name">Sinop Fortseg</h1>
+      </div>
+      <nav id="navbar">
+        <button class="menu-toggle" id="menu-toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link">Início</a></li>
+          <li><a href="#servicos" class="nav-link">Serviços</a></li>
+          <li><a href="#sobre" class="nav-link">Sobre</a></li>
+          <li><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h2 class="slide-in">Segurança e proteção para o que importa</h2>
+          <p class="fade-in">Soluções profissionais em segurança para sua casa, empresa e família.</p>
+          <div class="hero-buttons">
+            <a href="#servicos" class="btn btn-primary">Nossos Serviços</a>
+            <a href="https://wa.me/5566992051171" class="btn btn-whatsapp" target="_blank">
+              <i class="fab fa-whatsapp"></i> Fale Conosco
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+    </section>
+
+    <section id="servicos" class="services-section">
+      <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up">
+            <div class="service-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3>Monitoramento</h3>
+            <p>Sistemas de CFTV e monitoramento 24 horas para residências e empresas.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Segurança Patrimonial</h3>
+            <p>Proteção completa para seu patrimônio com vigilantes treinados.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <h3>Controle de Acesso</h3>
+            <p>Sistemas modernos de controle de acesso para maior segurança.</p>
+          </div>
+          <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <h3>Alarmes</h3>
+            <p>Instalação e manutenção de sistemas de alarme residencial e empresarial.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="about-section">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2 class="section-title">Sobre a Sinop Fortseg</h2>
+            <p>Somos uma empresa especializada em segurança patrimonial privada personalizada, nossa equipe é preparados, para criar estratégias de acordo com a situação. Tendo como missão oferecer proteção as pessoas, eventos, empresas, condomínios é muito mais…</p>
+            <div class="about-values">
+              <div class="value-item">
+                <i class="fas fa-medal"></i>
+                <h4>Excelência</h4>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-handshake"></i>
+                <h4>Confiança</h4>
+              </div>
+              <div class="value-item">
+                <i class="fas fa-shield-alt"></i>
+                <h4>Proteção</h4>
+              </div>
+            </div>
+          </div>
+          <div class="about-image">
+            <div class="image-container">
+              <img src="https://images.pexels.com/photos/853168/pexels-photo-853168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Equipe de segurança" class="about-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">O que dizem nossos clientes</h2>
+        <div class="testimonials-slider" id="testimonials-slider">
+          <div class="testimonial-card active">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"Excelentes profissionais! Instalaram todo o sistema de segurança da minha empresa com rapidez e qualidade."</p>
+            <div class="testimonial-author">
+              <h4>Carlos Silva</h4>
+              <p>Empresário</p>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"Ótimo atendimento e serviço de qualidade. Me sinto muito mais segura com o sistema de monitoramento da Fortseg."</p>
+            <div class="testimonial-author">
+              <h4>Ana Paula</h4>
+              <p>Advogada</p>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">"Profissionais capacitados e comprometidos com a segurança. Recomendo fortemente os serviços da Sinop Fortseg."</p>
+            <div class="testimonial-author">
+              <h4>Marcos Oliveira</h4>
+              <p>Engenheiro</p>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <button class="slider-btn" id="prev-testimonial"><i class="fas fa-chevron-left"></i></button>
+          <div class="slider-dots" id="slider-dots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+          </div>
+          <button class="slider-btn" id="next-testimonial"><i class="fas fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Endereço</h4>
+                <p>R. das Castanheiras, 320 - St. Comercial, Sinop - MT</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <div>
+                <h4>Telefone</h4>
+                <p>(66) 99205-1171</p>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-clock"></i>
+              <div>
+                <h4>Horário de Atendimento</h4>
+                <p>Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+              </div>
+            </div>
+            <div class="whatsapp-cta">
+              <a href="https://wa.me/5566992051171" class="btn btn-whatsapp-large" target="_blank">
+                <i class="fab fa-whatsapp"></i> Fale Conosco pelo WhatsApp
+              </a>
+            </div>
+          </div>
+          <div class="contact-map">
+            <div id="map" style="width: 100%; height: 450px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="img/logo.png" alt="Sinop Fortseg Logo" class="footer-logo-img">
+          <h3>Sinop Fortseg</h3>
+          <p>Segurança profissional ao seu alcance</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <h4>Redes Sociais</h4>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sinop Fortseg. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#header" class="back-to-top" id="back-to-top">
+    <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/testimonials.js"></script>
+</body>
+</html>
