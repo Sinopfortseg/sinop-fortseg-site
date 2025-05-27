@@ -1,12 +1,12 @@
 /* Base Styles */
 :root {
   /* Primary Colors */
-  --primary-color: #0a1f56; /* Dark Blue (from logo) */
+  --primary-color: #0a1f56;
   --primary-light: #2c4787;
   --primary-dark: #061335;
   
   /* Secondary Colors */
-  --secondary-color: #e6e6e6; /* Silver/White (from logo) */
+  --secondary-color: #e6e6e6;
   --secondary-dark: #c0c0c0;
   
   /* Accent Colors */
@@ -105,6 +105,37 @@ a {
 
 a:hover {
   color: var(--primary-light);
+}
+
+/* Page Section Styles */
+.page-section {
+  padding: 120px 0 var(--spacing-xl);
+  background-color: var(--background-light);
+}
+
+.content-wrapper {
+  background-color: var(--text-light);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-md);
+  margin-top: var(--spacing-lg);
+}
+
+.content-wrapper h2 {
+  color: var(--primary-color);
+  margin-top: var(--spacing-lg);
+  font-size: 1.8rem;
+}
+
+.content-wrapper ul {
+  list-style-position: inside;
+  margin-bottom: var(--spacing-md);
+  padding-left: var(--spacing-md);
+}
+
+.content-wrapper li {
+  margin-bottom: var(--spacing-xs);
+  color: var(--text-medium);
 }
 
 /* Buttons */
@@ -263,7 +294,7 @@ a:hover {
   min-height: 600px;
   display: flex;
   align-items: center;
-  background-image: url('../img/sinop_fortseg.jpg');
+  background-image: url('https://images.pexels.com/photos/1201588/pexels-photo-1201588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-size: cover;
   background-position: center;
   color: var(--text-light);
